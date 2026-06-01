@@ -1,0 +1,13 @@
+# ModelSim / Questa
+wlft*
+vsim.wlf
+vsim_stacktrace.vstf
+transcript
+*.vcd
+*.vstf
+
+# Icarus
+*.vvp
+
+# WaveTrace
+*.fst
