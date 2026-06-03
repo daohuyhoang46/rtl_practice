@@ -1,29 +1,21 @@
-# vsim work.fifo_tb 
-# Start time: 12:41:32 on May 23,2026
+# vsim basecpu_tb 
+# Start time: 12:29:07 on Jun 03,2026
 # Loading sv_std.std
-# Loading work.fifo_tb
-# Loading work.fifo
-add wave -position insertpoint  \
-sim:/fifo_tb/dut/clk \
-sim:/fifo_tb/dut/rst \
-sim:/fifo_tb/dut/wr_en \
-sim:/fifo_tb/dut/wr_data \
-sim:/fifo_tb/dut/rd_en \
-sim:/fifo_tb/dut/rd_data \
-sim:/fifo_tb/dut/full \
-sim:/fifo_tb/dut/empty \
-sim:/fifo_tb/dut/mem \
-sim:/fifo_tb/dut/wr_addr \
-sim:/fifo_tb/dut/rd_addr \
-sim:/fifo_tb/dut/cnt
+# Loading work.basecpu_tb
+# Loading work.cpu
+# Loading work.controlunit
+# Loading work.alu
+# Loading work.MEM
+add wave -position insertpoint sim:/basecpu_tb/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Hoang  Hostname: LAPTOP-CNUQM5M3  ProcessID: 23228
-#           Attempting to use alternate WLF file "./wlftb6dfc0".
+#           Attempting to use alternate WLF file "./wlft5v34mv".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftb6dfc0
+#           Using alternate file: ./wlft5v34mv
 run -all
-# ** Note: $stop    : fifo_tb.sv(88)
-#    Time: 115 ns  Iteration: 0  Instance: /fifo_tb
-# Break in Module fifo_tb at fifo_tb.sv line 88
-# End time: 12:49:05 on May 23,2026, Elapsed time: 0:07:33
+# ** Note: $stop    : basecpu_tb.sv(95)
+#    Time: 220 ns  Iteration: 0  Instance: /basecpu_tb
+# Break in Module basecpu_tb at basecpu_tb.sv line 95
+quit
+# End time: 12:50:03 on Jun 03,2026, Elapsed time: 0:20:56
 # Errors: 0, Warnings: 2

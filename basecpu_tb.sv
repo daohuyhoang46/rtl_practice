@@ -87,6 +87,15 @@ initial begin
 
     // done state
     #10;
+    // fetch state - addr 6
+    #10;
+
+    // execute state
+    #10;
+
+    // done state
+    #10;
+
 
     // Set end_s to shutdown
     end_s = 1;
